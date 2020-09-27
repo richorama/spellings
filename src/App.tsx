@@ -16,7 +16,7 @@ class App extends React.Component<{}, IState> {
   }
 
   render() {
-    return <div style={{ margin: 40}}>
+    return <div style={{ marginTop: 40, marginLeft: 40, marginRight: 40}}>
       <h1>Awesome spelling app</h1>
       <AddWord onWord={this.handleAddWord} />
       <WordList words={this.state.words} />
