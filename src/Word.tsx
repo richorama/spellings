@@ -18,7 +18,7 @@ class Word extends React.Component<IProps, IState>{
 
   handleSubmit = (e: any) => {
     e.preventDefault()
-    if (this.state.value.toUpperCase() === this.props.word.toUpperCase()) {
+    if (this.state.value.toUpperCase().trim() === this.props.word.toUpperCase()) {
       this.setState({
         result: 1,
         value: ''

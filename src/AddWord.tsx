@@ -15,7 +15,7 @@ class AddWord extends React.Component<IProps, IState> {
 
   handleSubmit = (e:any) => {
     e.preventDefault()
-    this.props.onWord(this.state.value)
+    this.props.onWord(this.state.value.trim())
     this.setState({ value: '' })
   }
 
